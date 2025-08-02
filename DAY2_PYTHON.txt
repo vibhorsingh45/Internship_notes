@@ -1,0 +1,108 @@
+Functions -->
+
+#default function
+def display():
+    print("This is a function body")
+    
+display()
+
+#param function
+def add(num1, num2):
+    print(num1 + num2)
+
+add(10, 20) 
+
+#Function with return type
+def greet(name):
+    return "Welcome" + name
+
+print(greet("Vibhor")
+
+greet_messsage = greet("Aditya")
+print(greet_message)
+
+#Declare
+num = int()
+print(num)
+
+#Function declaration
+def show():
+    pass
+
+def numbers(*take_nums):
+    print(take_nums)
+
+numbers(10, 20, 30, 40)
+
+def about_person(*details):
+    print(details)
+
+about_person(name = "Vibhor", age = 20, city = "lucknow")
+
+#default values inside a function param
+def account(salary = 101):
+    print(salary)
+
+account()
+account(501)
+
+
+#Error
+def take_multi_values(*nums, num2, num3):
+    print(nums, num2, num3)
+
+take_multi_values(10, 20, 30, 40, 50)
+
+
+#Error solution
+def take_multi_values(*nums, num2 = 60, num3 = 70):
+    print(nums, num2, num3)
+
+take_multi_values(10, 20, 30, 40, 50)
+#(10, 20, 30, 40, 50) 60 70
+
+#Quiz --> Solution --> Error
+def take_multi_values(num1 = 10, *nums1, *nums2):
+    print(num1, nums1, nums2)
+
+take_multi_values(30, 40, 50)
+
+
+#Keyword Tyoes function
+-->
+def about_student(name, age, ac, pc):
+    print(name, age, ac, pc)
+
+about_student(age = 20, name = "Vibhor", ac = 123, pc = 456)
+
+-->
+def about_student(name = "Vibhor", age = 20):
+    print(name, age)
+
+about_student(age = 19, name = "Yash")
+
+
+#Nested_Functions
+def outer(num1, num2):
+    sum = num1 + num2
+    def inner(take_sum):
+     final_result = take_sum / 2
+     return final_result
+    return inner
+
+
+
+
+
+#Lambda(unknown) Functions -> by default returns RETURN
+
+def greet(name):
+    return "Welcome" + name
+
+greet()
+
+
+#1st Example
+
+
+
